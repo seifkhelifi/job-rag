@@ -56,11 +56,16 @@ These metrics indicate strong retrieval performance, with room for improvement i
 
 ## Usage
 
+Here’s the updated **Usage** section including the option to run the `main.py` FastAPI server directly:
+
+
+## Usage
+
 1. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
+````
 
 2. Load your dataset and initialize the RAG pipeline:
 
@@ -78,7 +83,23 @@ for job in results:
     print(job['title'], job['company'])
 ```
 
----
+4. **Run the FastAPI server**:
+
+You can also run the system directly via `main.py`, which starts a FastAPI server to handle queries:
+
+```bash
+python main.py
+```
+
+Then open your browser or send requests to:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+
+
+
 
 ## Evaluation Framework
 
